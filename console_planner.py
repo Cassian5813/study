@@ -7,7 +7,6 @@ class TaskManager:
         self.create_table_if_not_exists()
 
     def create_table_if_not_exists(self):
-        # Создаем таблицу, если ее нет
         self.cursor.execute('''
         CREATE TABLE IF NOT EXISTS tasks (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
